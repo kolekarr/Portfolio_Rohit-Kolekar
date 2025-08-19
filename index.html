@@ -8,9 +8,9 @@
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container">
+    <div class="container nav-content">
       <h1 class="logo">Rohit Kolekar</h1>
       <nav>
         <a href="#about">About</a>
@@ -24,22 +24,31 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="container hero-content">
-      <div>
-        <h2>Mechanical Engineer | Thermal & Energy Systems</h2>
-        <p>Mechanical/thermal engineer with hands-on experience in CFD, battery thermal management, and wind energy analytics.</p>
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="resume.pdf" class="btn-outline">Download Resume</a>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <img src="images/profile.jpg" alt="Profile photo">
       </div>
-      <img src="images/hero.jpg" alt="Engineering visual">
+      <div class="hero-right">
+        <h2>Mechanical Engineer</h2>
+        <h3>Thermal & Energy Systems</h3>
+        <p>Mechanical/thermal engineer with experience in CFD, battery thermal management, and wind energy analytics.</p>
+        <div class="btn-group">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="resume.pdf" class="btn-outline">Download Resume</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container">
+    <div class="container narrow">
       <h2>About Me</h2>
-      <p>I specialize in thermal/fluid systems and data-driven modeling. Recent work spans battery ECM parameterization, OCV relaxation analysis, and CFD validation of natural convection in finned radiators.</p>
+      <p>
+        I specialize in thermal/fluid systems and data-driven modeling.
+        My work includes battery ECM parameterization, OCV relaxation analysis,
+        and CFD validation of natural convection in finned radiators.
+      </p>
     </div>
   </section>
 
@@ -68,18 +77,59 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Research Engineer – Thermal Systems</h3>
+          <p>2024 – 2025</p>
+          <ul>
+            <li>Designed battery potentiometric tests (dU/dT, OCV).</li>
+            <li>Built MATLAB toolchain for OCV relaxation stability detection.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Graduate Engineer – CFD & Heat Transfer</h3>
+          <p>2024</p>
+          <ul>
+            <li>FloEFD CFD on finned radiator at 45° tilt.</li>
+            <li>Created verification spreadsheet for heat balances.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid skills-grid">
+        <div class="skill">CAD (SolidWorks, Fusion)</div>
+        <div class="skill">MATLAB / Simulink</div>
+        <div class="skill">CFD (FloEFD, ANSYS)</div>
+        <div class="skill">Thermal Systems</div>
+        <div class="skill">Python Data Analysis</div>
+        <div class="skill">Project Management</div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section">
-    <div class="container">
+    <div class="container narrow">
       <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
       <p>
-        <a href="https://github.com/your-handle">GitHub</a> |
+        <a href="https://github.com/your-handle">GitHub</a> | 
         <a href="https://linkedin.com/in/your-handle">LinkedIn</a>
       </p>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Rohit Kolekar. All rights reserved.</p>
   </footer>
